@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="MvcBug">
+  <DataContextMoniker Name="/MvcBugDataContext" />
+  <nestedChildShapes>
+    <classShape Id="1acc3823-68be-47c1-934a-d9c015a10121" absoluteBounds="0.75, 3.875, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/MvcBugDataContext/aspnet_Users" />
+      <nestedChildShapes>
+        <elementListCompartment Id="28500711-b516-4e9b-842b-606c280488fc" absoluteBounds="0.765, 4.335, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="38a7187d-048e-4bdd-8cb4-60432bda442f" absoluteBounds="0.75, 1.25, 2, 1.1939925130208338">
+      <DataClassMoniker Name="/MvcBugDataContext/States" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1cd6e2cb-7a34-4ad7-a153-dfe3acfc2691" absoluteBounds="0.765, 1.71, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="de2259c2-02da-43ed-9422-02ba2747e982" absoluteBounds="3.5, 0.875, 2, 1.9631982421874998">
+      <DataClassMoniker Name="/MvcBugDataContext/Tasks" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2819bdd1-eece-4525-b504-6871ecd757aa" absoluteBounds="3.515, 1.335, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 4.95274983723958); (4.5 : 4.95274983723958); (4.5 : 2.8381982421875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/MvcBugDataContext/aspnet_Users/aspnet_Users_Tasks" />
+      <nodes>
+        <classShapeMoniker Id="1acc3823-68be-47c1-934a-d9c015a10121" />
+        <classShapeMoniker Id="de2259c2-02da-43ed-9422-02ba2747e982" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 1.84699625651042); (3.5 : 1.84699625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/MvcBugDataContext/States/States_Tasks" />
+      <nodes>
+        <classShapeMoniker Id="38a7187d-048e-4bdd-8cb4-60432bda442f" />
+        <classShapeMoniker Id="de2259c2-02da-43ed-9422-02ba2747e982" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
